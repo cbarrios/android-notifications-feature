@@ -46,6 +46,10 @@ class MainActivity : AppCompatActivity() {
             .setContentTitle("My title")
             .setContentText("This is a sample body.")
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+            .setStyle(
+                NotificationCompat.BigTextStyle()
+                    .bigText("Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello")
+            )
         NotificationManagerCompat.from(this).notify(1, builder.build())
     }
 }
